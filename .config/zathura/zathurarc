@@ -1,0 +1,41 @@
+map [fullscreen] j navigate next
+map [fullscreen] k navigate previous
+map [fullscreen] J scroll down
+map [fullscreen] K scroll up 
+map [fullscreen] <C-f> toggle_fullscreen
+map [fullscreen] <C-d> adjust_window best-fit
+map [fullscreen] <C-s> adjust_window width
+map [fullscreen] w scroll up
+map [fullscreen] s scroll down
+map [fullscreen] <A-s> navigate next
+map [fullscreen] <A-w> navigate previous
+map [fullscreen] Up navigate previous
+map [fullscreen] Down navigate next
+
+map [normal] j navigate next
+map [normal] k navigate previous
+map [normal] J scroll down
+map [normal] K scroll up 
+map [normal] <C-f> toggle_fullscreen
+map [normal] <C-d> adjust_window best-fit
+map [normal] <C-s> adjust_window width
+map [normal] s scroll down
+map [normal] w scroll up
+map [normal] <A-s> navigate next
+map [normal] <A-w> navigate previous
+map [normal] Up navigate previous
+map [normal] Down navigate next
+map [normal] <A-d> toggle_page_mode
+map [normal] <C-b> toggle_statusbar
+map [normal] <C-i> recolor
+
+set font "LiberationSans 14"
+
+set default-bg "#ede1d4"
+set default-fg "#282828"
+set recolor-lightcolor "#ede1d4"
+set recolor-darkcolor "#282828"
+set recolor "true"
+set recolor-keephue "false"
+set smooth-scroll True
+set scroll-step 60

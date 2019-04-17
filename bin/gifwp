@@ -1,0 +1,13 @@
+#!/bin/bash
+#
+# play! a video on the root window
+#
+
+pkill -9 xwinwrap
+
+xwin="xwinwrap -ni -fdt -un -st -b -nf -ov -fs -- "
+mpv="mpv --video-aspect=16:10 --wid WID --no-border --loop-file=inf -speed=0.01"
+
+#$xwin $mpv "$1" > /dev/null 2>&1 &
+
+xwinwrap -ni -fs -ov -- mpv --video-aspect=16:10 -wid WID --no-border --really-quiet --loop-file=inf --speed=0.5 "$1" > /dev/null 2>&1 &

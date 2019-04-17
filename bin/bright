@@ -1,0 +1,12 @@
+#!/bin/bash
+
+xbacklight -"$1" 5
+
+if [[ $(printf %0.f $(xbacklight -get)) -eq 0 ]]; then
+	xbacklight -set 1
+fi
+printf %0.f%%\\n $(xbacklight -get)
+
+light="$(xbacklight -get)"
+displaylight="${light%.*}"
+notify-send -u low -t 350 "Brightness "$displaylight"%"

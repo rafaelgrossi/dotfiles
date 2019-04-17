@@ -1,0 +1,21 @@
+@import url('theme/lovelace.css');
+@import url('alert.css');
+@import url('context.css');
+@import url('find.css');
+@import url('custom.css');
+@import url('tabs.css');
+
+@namespace url('http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul');
+
+@namespace url("http://www.w3.org/1999/xhtml");
+:root{
+    scrollbar-color: #272727 #2E3645 !important;
+    scrollbar-width: none !important;
+}
+* {
+    scrollbar-width: none !important;
+}  
+
+body {
+    scrollbar-width: none !important;	
+}
