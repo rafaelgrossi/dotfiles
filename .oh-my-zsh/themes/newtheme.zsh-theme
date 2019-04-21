@@ -75,7 +75,7 @@ setopt prompt_subst
     local git_branch='$(git_prompt_info)'
     local venv_python='$(virtualenv_prompt_info)'
 
-    PROMPT="${promptSymbolFrom}(%{%F{blue}%}% ^%{%F{red}%}% .%{%F{blue}%}% ^%{%F{white}%}% )-(%{%F{green}%}% %n%{%F{white}%}% )-(${current_dir})${git_branch}-${promptSymbol}
+    PROMPT="${promptSymbolFrom}(%{%F{magenta}%}% ^%{%F{red}%}% .%{%F{magenta}%}% ^%{%F{reset_color}%}% )-(%{%F{green}%}% %n%{%F{reset_color}%}% )-(${current_dir})${git_branch}
 ${promptSymbolTo}$PR_PROMPT "
 
     RPROMPT="${return_code}"
