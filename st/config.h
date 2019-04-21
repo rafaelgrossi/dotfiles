@@ -8,7 +8,7 @@
 static char *font = "xos4 Terminus:size=14";
 static int borderpx = 2;
 
-#define THEME 6
+#define THEME 7
 // lovelace 1
 // skyfall  2
 // White    3
@@ -28,6 +28,8 @@ static int borderpx = 2;
 #include "themes/reorr.h"
 #elif THEME == 6
 #include "themes/lightbrown.h"
+#elif THEME == 7
+#include "themes/violeteg.h"
 #endif
 
 unsigned int defaultfg = 259;
