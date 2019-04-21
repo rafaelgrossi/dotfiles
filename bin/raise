@@ -1,0 +1,5 @@
+#!/bin/bash
+
+
+app_on_any_desk=`/home/raech/Suckless/2bwm/hidden -c | menu -p "Hidden: " | cut -d "'" -f 4`
+$app_on_any_desk
