@@ -10,6 +10,7 @@ call plug#end()
 augroup WrapLineInFile
 	autocmd!
 	autocmd FileType tex setlocal wrap
+	autocmd FileType tex silent! setlocal syntax spell spelllang=pt_br
 augroup END
 
 " Latex
@@ -17,6 +18,7 @@ filetype plugin on
 filetype indent on
 let g:tex_flavor='latex'
 let g:vimtex_view_method='zathura'
+let g:tex_comment_nospell=1
 
 " Shortcuts
 let mapleader  = "," 
@@ -38,6 +40,13 @@ let &t_EI = "\<Esc>]50;CursorShape=0\x7" " Block in normal mode
 let &t_SR = "\<esc>]50;CursorShape=2\x7" " Underline in replace mode
 
 " Display Settings
+set t_Co=256
+set termguicolors
+let &t_8f = "\<Esc>[38;2;%lu;%lu;%lum"
+let &t_8b = "\<Esc>[48;2;%lu;%lu;%lum"
+set background=dark " Setting dark mode
+colorscheme ryuuko
+let g:deus_termcolors=256
 
 "set termguicolors
 "let &t_8f = "\<Esc>[38;2;%lu;%lu;%lum"

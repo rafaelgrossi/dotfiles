@@ -83,7 +83,7 @@ let s:ds = {}
 
 
 " fill it with absolute colors
-let s:ds.dark0       = ['#2C323B', 235]     " 40-40-40 Background
+let s:ds.dark0       = ['#414141', 235]     " 40-40-40 Background
 let s:ds.dark1       = ['#3c3836', 237]     " 60-56-54
 let s:ds.dark2       = ['#2C313A', 239]     " 80-73-69
 let s:ds.dark3       = ['#665c54', 241]     " 102-92-84
@@ -93,7 +93,7 @@ let s:ds.dark4_256   = ['#7c6f64', 243]     " 124-111-100
 let s:ds.gray_245    = ['#928374', 245]     " 146-131-116
 let s:ds.gray_244    = ['#928374', 244]     " 146-131-116
 
-let s:ds.light0      = ['#d2d2d2', 229]     " 253-244-193
+let s:ds.light0      = ['#e2a76d', 229]     " 253-244-193
 let s:ds.light1      = ['#ebdbb2', 223]     " 235-219-178
 let s:ds.light2      = ['#d5c4a1', 250]     " 213-196-161
 let s:ds.light3      = ['#bdae93', 248]     " 189-174-147
@@ -1200,4 +1200,4 @@ hi! link SignColumn LineNr
     hi  Folded guibg=#242a32
     hi! FoldColumn guibg=#242a32
 
-" vim: set sw=2 ts=2 sts=2 et tw=80 ft=vim fdm=marker:
+" vim: set sw=2 ts=2 sts=2 et tw=80 ft=vim :

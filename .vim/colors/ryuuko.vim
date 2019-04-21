@@ -16,7 +16,7 @@ let colors_name = "ryuuko"
 " highlight groups {{{
 
 if &t_Co >= 256 || has("gui_running")
-        hi Normal ctermbg=0 ctermfg=7 cterm=NONE guibg=#232c33 guifg=#f0f0f0 gui=NONE
+        hi Normal ctermbg=0 ctermfg=7 cterm=NONE guibg=#353535 guifg=#ede1d4 gui=NONE
     set background=dark
         hi NonText ctermbg=NONE ctermfg=0 cterm=NONE guibg=NONE guifg=#232c33 gui=NONE
         hi Comment ctermbg=NONE ctermfg=8 cterm=NONE guibg=NONE guifg=#70838c gui=NONE
