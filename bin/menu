@@ -1,6 +1,7 @@
 #!/bin/bash
 
-colors="-nb #ede1d4 -nf #423F3D -sb #423f3d -sf #f4ede6" 
+#colors="-nb #ede1d4 -nf #423F3D -sb #423f3d -sf #f4ede6" 
+colors="-nb #353535 -nf #ede1d4 -sb #e2a76d -sf #353535"
 
 res=$(xrandr --nograb --current | awk '/\*/ {print $1}' | tail -n 1)
 res=${res% *}

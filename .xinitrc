@@ -34,20 +34,28 @@ fi
 # Raech Settings
 
 xset +fp /usr/share/fonts/
+xset +fp ~/.fonts/misc/
 xset fp rehash
 
 xrandr --output eDP1 --dpi 160
 setxkbmap -option caps:ctrl_modifier
 setxkbmap -layout us,us -variant ,intl -option grp:alt_shift_toggle
+xsetroot -cursor_name left_ptr
 
 # Session
-session=0
+session=2bwm
 if [ $session = "dwm"]; then
-	# background
 	gifwp ~/Pictures/Wallpaper/$wallpaper
 	sh ~/Suckless/Taylan/autostart.sh
+	exec dwm
 fi
-#exec $HOME/Suckless/Taylan/dwm
-exec awesome
-
-
+if [ $session = "awesome" ]; then
+	exec awesome
+fi
+if [ $session = "2bwm" ]; then
+	#gifwp ~/Pictures/Wallpaper/$wallpaper
+	sh ~/Suckless/2bwm/autostart.sh
+	exec ~/Suckless/2bwm/2bwm
+fi
+#gifwp ~/Pictures/Wallpaper/$wallpaper
+#exec dwm
