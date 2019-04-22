@@ -1,0 +1,4 @@
+#!/bin/bash
+
+window=`xdotool getactivewindow`
+xdotool windowsize $window 2440 1330 && xdotool windowmove $window 87 77

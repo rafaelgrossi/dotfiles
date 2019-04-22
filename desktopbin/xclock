@@ -1,0 +1,5 @@
+#!/bin/bash
+
+ddate=`date +%H:%M`
+
+dunstify -a clock -u low "  $ddate"

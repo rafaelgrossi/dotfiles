@@ -1,0 +1,3 @@
+#!/bin/bash
+
+maim ~/Pictures/Screenshots/$1.png

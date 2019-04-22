@@ -1,0 +1,25 @@
+#!/bin/bash
+
+STEP=5
+DEFAULTVOLUME=70
+
+if [[ "$1" = "up" ]]; then
+	pactl set-sink-mute @DEFAULT_SINK@ 0 && pactl set-sink-volume @DEFAULT_SINK@ +$STEP%
+	#amixer set Master $STEP%+
+
+elif [[ "$1" = "down" ]]; then
+	pactl set-sink-mute @DEFAULT_SINK@ 0 && pactl set-sink-volume @DEFAULT_SINK@ -$STEP%
+	#amixer set Master $STEP%-
+elif [[ "$1" = "toggle" ]]; then
+	pactl set-sink-mute @DEFAULT_SINK@ toggle
+
+elif [[ "$1" = "reset" ]]; then
+	pactl set-sink-mute @DEFAULT_SINK@ 0 && pactl set-sink-volume @DEFAULT_SINK@ $DEFAULTVOLUME%
+fi
+
+
+VOLUMEINFO=$(`amixer -c 1 -M -D pulse get Master | egrep -m 1 -o '[0-9][0-9]%'`)
+#notify-send -t 500 -u low "`echo "$VOLUMEINFO"`"
+#notify-send -t 500 " " -h string:synchronous:Volume -h int:value:$VOLUMEINFO 
+#notify-send -u low -t 350 "Volume $(printf %s $(amixer get Master | egrep -m 1 -o '[0-9][0-9]%'))"
+notify-send -u low -t 350 "Volume $(amixer sget Master | grep 'Right:' | awk -F'[][]' '{ print $2 }')"

@@ -1,0 +1,4 @@
+#!/bin/bash
+
+GAME=`cd /home/raech/Games/Emulator/GBA/ && ls *.gba | menu -p Game:`
+cd /home/raech/Games/Emulator/GBA/ && mgba -6 $GAME
