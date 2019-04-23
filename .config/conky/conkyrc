@@ -1,0 +1,81 @@
+# asddd
+background no
+use_xft yes
+xftfont cure:size=9
+xftalpha 1
+update_interval 1.0
+total_run_times 0
+own_window yes
+own_window_transparent yes
+own_window_type override
+own_window_class conky
+own_window_title conky
+own_window_hints undecorated,below,skip_taskbar,skip_pager
+own_window_argb_visual yes
+double_buffer yes
+minimum_size 180 180
+maximum_width 150
+draw_shades no
+draw_outline no
+draw_borders no
+draw_graph_borders no
+#stippled_borders yes
+default_color 66767F
+default_shade_color 0c141b
+default_outline_color 152738
+alignment top_right
+gap_x 3882
+gap_y 30
+no_buffers yes
+uppercase no
+cpu_avg_samples 2
+override_utf8_locale no
+color1 3A5548
+color2 132028
+#border_width 0
+#default_bar_size 146
+
+TEXT
+#${image ~/images/conky.png -p -1, 12 177x395}
+
+${color 66767F}${cpugraph cpu1 25, 104 3A5548 3A5548}$color
+CPU1: ${cpu cpu1}%$alignr ${offset 7}${color1}${cpubar cpu1 6, 103 /}$color ${offset -108}${color2}${execbar echo 0}$color
+CPU2: ${cpu cpu2}%$alignr ${offset 7}${color1}${cpubar cpu2 6, 103 /}$color ${offset -108}${color2}${execbar echo 0}$color
+CPU3: ${cpu cpu3}%$alignr ${offset 7}${color1}${cpubar cpu3 6, 103 /}$color ${offset -108}${color2}${execbar echo 0}$color
+CPU4: ${cpu cpu4}%$alignr ${offset 7}${color1}${cpubar cpu4 6, 103 /}$color ${offset -108}${color2}${execbar echo 0}$color
+
+${color 2E5870}MEMORY$color
+RAM $alignc $mem / $memmax $alignr $memperc%
+${color1}${membar 6, 146}$color
+${voffset -11}${color2}${execbar echo 0}$color
+
+${color 2E5870}DISK$color
+Root $alignc ${fs_used /} / ${fs_size /} $alignr ${fs_used_perc /}%
+${color1}${fs_bar 6, 146 /}$color
+${voffset -11}${color2}${execbar echo 0}$color
+
+${color 2E5870}GPU$color
+Fan Speed ${alignr}${execi 5 nvidia-settings -q [fan:0]/GPUCurrentFanSpeed -t} %
+Temperature $alignr ${nvidia temp} C
+GPU Clock $alignr ${nvidia gpufreq} Mhz
+Memory Clock $alignr ${nvidia memfreq} Mhz
+Memory Used ${alignr}${execi 5 nvidia-settings -q [gpu:0]/UsedDedicatedGPUMemory -t}/${exec nvidia-settings -q [gpu:0]/TotalDedicatedGPUMemory -t} MiB
+
+${color 2E5870}PROCESSES$color
+${top_mem name 1}${alignr}${top mem 1}%
+${top_mem name 2}${alignr}${top mem 2}%
+${top_mem name 3}${alignr}${top mem 3}%
+${top_mem name 4}${alignr}${top mem 4}%
+${top_mem name 5}${alignr}${top mem 5}%
+
+${color 2E5870}NETWORK$color
+${color 66767F}${downspeedgraph enp2s0 25, 150 3A5548 3A5548}$color
+DL: ${downspeed enp2s0} $alignr total: ${totaldown enp2s0}
+${color 66767F}${upspeedgraph enp2s0 25, 150 203D4E 203D4E}$color
+UL: ${upspeed enp2s0} $alignr total: ${totalup enp2s0}
+
+${execi 300 sh ~/.conky/.gmail.sh} ${execi 3600 aptitude search "~U" | wc -l} updates
+
+${font sans:pixelsize=24}${alignc}${time %I:%M}${font}
+${font sans:pixelsize=11}${alignc}${time  %B %d, %Y}
+${alignc}${time %A}${font}
