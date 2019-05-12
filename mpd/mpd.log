@@ -1,0 +1,340 @@
+Apr 22 16:49 : exception: RTIOThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted
+Apr 22 16:49 : exception: Failed to open '/home/raech/.mpd/mpdstate': No such file or directory
+Apr 22 16:49 : config: option 'device' on line 13 was not recognized
+Apr 22 20:56 : client: [0] opened from 127.0.0.1:51320
+Apr 22 20:56 : client: [0] closed
+Apr 22 20:58 : client: [1] opened from 127.0.0.1:51328
+Apr 22 20:58 : update: added YUKI - forme/03. やたらとシンクロニシティ.mp3
+Apr 22 20:58 : update: added YUKI - forme/01. チャイム.mp3
+Apr 22 20:58 : update: added YUKI - forme/07. 口実にして.mp3
+Apr 22 20:58 : update: added YUKI - forme/04. 魔法はまだ.mp3
+Apr 22 20:58 : update: added YUKI - forme/06. ただいま.mp3
+Apr 22 20:58 : update: added YUKI - forme/11. 百日紅.mp3
+Apr 22 20:58 : update: added YUKI - forme/10. Sunday Girl.mp3
+Apr 22 20:58 : update: added YUKI - forme/05. しのびこみたい.mp3
+Apr 22 20:58 : update: added YUKI - forme/09. 転校生になれたら.mp3
+Apr 22 20:58 : update: added YUKI - forme/02. トロイメライ.mp3
+Apr 22 20:58 : update: added YUKI - forme/12. 24hours.mp3
+Apr 22 20:58 : update: added YUKI - forme/13. 美しいわ.mp3
+Apr 22 20:58 : update: added YUKI - forme/08. 風来坊.mp3
+Apr 22 20:58 : update: added Burnout Syndrome/02 エアギターガール.mp3
+Apr 22 20:58 : update: added Burnout Syndrome/03 サクラカノン.mp3
+Apr 22 20:58 : update: added People In The Box – The Saints (Single)/02. あなたのなかの忘れた海.mp3
+Apr 22 20:58 : update: added People In The Box – The Saints (Single)/01. 聖者たち.mp3
+Apr 22 20:58 : update: added People In The Box – The Saints (Single)/03. 天国のアクシデント.mp3
+Apr 22 20:58 : update: added Shingeki no Kyojin/02 - cinema staff [Boku Tachi no Honou] tour Final@2013.07.11 Shibuya CLUB QUATTRO.mp3
+Apr 22 20:58 : update: added Shingeki no Kyojin/02 - Jiyuu no Tsubasa.mp3
+Apr 22 20:58 : update: added Shingeki no Kyojin/01 - Guren no Yumiya.mp3
+Apr 22 20:58 : update: added Shingeki no Kyojin/01 - Utsukushiki Zankoku na Sekai.mp3
+Apr 22 20:58 : update: added Shingeki no Kyojin/03 - Moshi Kono Kabe no Naka ga Ikken no Ie da to Shitara.mp3
+Apr 22 20:58 : update: added Shingeki no Kyojin/02 - Starting line.mp3
+Apr 22 20:58 : update: added Shingeki no Kyojin/01 - great escape.mp3
+Apr 22 20:58 : update: added Minami - Kawaki wo Ameku (Single) Domestic na Kanojo OP/04.Prologue.mp3
+Apr 22 20:58 : update: added Minami - Kawaki wo Ameku (Single) Domestic na Kanojo OP/01.カワキヲアメク.mp3
+Apr 22 20:58 : update: added Minami - Kawaki wo Ameku (Single) Domestic na Kanojo OP/02.main actor.mp3
+Apr 22 20:58 : update: added Ragnarok Eternal/1. Wish.mp3
+Apr 22 20:58 : update: added Major メジャー Perfect Song Collection/CD 1/14. Stay With Me - Shimatani Hitomi.mp3
+Apr 22 20:58 : update: added Major メジャー Perfect Song Collection/CD 1/13. Hey!hey!alright - Scha Dara Parr + Kimura Kaela.mp3
+Apr 22 20:58 : update: added Major メジャー Perfect Song Collection/CD 1/10. Rise - Otomo Kohei.mp3
+Apr 22 20:58 : update: added Major メジャー Perfect Song Collection/CD 1/11. One Day - The Loose Dogs.mp3
+Apr 22 20:58 : update: added Major メジャー Perfect Song Collection/CD 1/06. Shoboi Kao Sunnayo Baby - The Loose Dogs.mp3
+Apr 22 20:58 : update: added Major メジャー Perfect Song Collection/CD 1/01. Kokoroe - Road Of Major.mp3
+Apr 22 20:58 : update: added Major メジャー Perfect Song Collection/CD 1/04. Saraba Aoki Omokage - Road Of Major.mp3
+Apr 22 20:58 : update: added Major メジャー Perfect Song Collection/CD 1/09. Yoru Ni Nareba - The Loose Dogs.mp3
+Apr 22 20:58 : update: added Major メジャー Perfect Song Collection/CD 1/12. Ame Nochi Niji Iro - Shigeno Gorou The Loose Dogs Feat.ohguro Maki.mp3
+Apr 22 20:58 : update: added Major メジャー Perfect Song Collection/CD 1/17. Twilight Star - Megamasso.mp3
+Apr 22 20:58 : update: added Major メジャー Perfect Song Collection/CD 1/15. Jibun Color - Nakamura Yu.mp3
+Apr 22 20:58 : update: added Major メジャー Perfect Song Collection/CD 1/07. Play The Game.mp3
+Apr 22 20:58 : update: added Major メジャー Perfect Song Collection/CD 1/02. Step - Arashiro Beni.mp3
+Apr 22 20:58 : update: added Major メジャー Perfect Song Collection/CD 1/03. Faraway - Paradise Go!! Go!!.mp3
+Apr 22 20:58 : update: added Major メジャー Perfect Song Collection/CD 1/05. Wonderland - May.mp3
+Apr 22 20:58 : update: added Major メジャー Perfect Song Collection/CD 1/08. Strike Party!!!.mp3
+Apr 22 20:58 : update: added Major メジャー Perfect Song Collection/CD 1/16. Kokoroe - Triplane .mp3
+Apr 22 20:58 : update: added Major メジャー Perfect Song Collection/CD 1/18. Zutto Mae Kara - French Kiss.mp3
+Apr 22 20:58 : update: added [AOJS] Janne Da Arc - Gekkouka/01. 月光花.mp3
+Apr 22 20:58 : update: added [AOJS] Janne Da Arc - Gekkouka/02. WING.mp3
+Apr 22 20:58 : update: added [AOJS] Janne Da Arc - Gekkouka/03. 月光花 -Black Jack Mix-.mp3
+Apr 22 20:58 : update: added [AOJS] Janne Da Arc - Gekkouka/藤田麻衣子 - wish ～キボウ～/3 気持ちの整理できるまで.mp3
+Apr 22 20:58 : update: added [AOJS] Janne Da Arc - Gekkouka/藤田麻衣子 - wish ～キボウ～/1 wish ～キボウ～.mp3
+Apr 22 20:58 : update: added [AOJS] Janne Da Arc - Gekkouka/藤田麻衣子 - wish ～キボウ～/4 wish ～キボウ～ (Instrumental).mp3
+Apr 22 20:58 : update: added [AOJS] Janne Da Arc - Gekkouka/藤田麻衣子 - wish ～キボウ～/2 トライアングル(duet with 奥華子).mp3
+Apr 22 20:58 : update: added Aimer/[2014.09.03] Dareka, Umi wo. (誰か、海を。) [Mini Album]/05. Cold Sun (Ryo Nagano Remix) with 永野亮(APOGEE).mp3
+Apr 22 20:58 : update: added Aimer/[2014.09.03] Dareka, Umi wo. (誰か、海を。) [Mini Album]/02. 白昼夢.mp3
+Apr 22 20:58 : update: added Aimer/[2014.09.03] Dareka, Umi wo. (誰か、海を。) [Mini Album]/01. 誰か、海を。.mp3
+Apr 22 20:58 : update: added Aimer/[2014.09.03] Dareka, Umi wo. (誰か、海を。) [Mini Album]/03. for ロンリー with 阿部真央.mp3
+Apr 22 20:58 : update: added Aimer/[2014.09.03] Dareka, Umi wo. (誰か、海を。) [Mini Album]/04. 眠りの森 (Kazuki Remix) with Yuuki Ozaki (from Galileo Galilei).mp3
+Apr 22 20:58 : update: added Aimer/BEST SELECTION blanc/10. 茜さす.mp3
+Apr 22 20:58 : update: added Aimer/BEST SELECTION blanc/02. 蝶々結び.mp3
+Apr 22 20:58 : update: added Aimer/BEST SELECTION blanc/09. 君を待つ.mp3
+Apr 22 20:58 : update: added Aimer/BEST SELECTION blanc/07. broKen NIGHT.mp3
+Apr 22 20:58 : update: added Aimer/BEST SELECTION blanc/14. 歌鳥風月.mp3
+Apr 22 20:58 : update: added Aimer/BEST SELECTION blanc/01. 六等星の夜.mp3
+Apr 22 20:58 : update: added Aimer/BEST SELECTION blanc/05. Re-pray.mp3
+Apr 22 20:58 : update: added Aimer/BEST SELECTION blanc/04. ポラリス.mp3
+Apr 22 20:58 : update: added Aimer/BEST SELECTION blanc/13. March of Time.mp3
+Apr 22 20:58 : update: added Aimer/BEST SELECTION blanc/08. カタオモイ.mp3
+Apr 22 20:58 : update: added Aimer/BEST SELECTION blanc/12. everlasting snow.mp3
+Apr 22 20:58 : update: added Aimer/BEST SELECTION blanc/06. 星屑ビーナス.mp3
+Apr 22 20:58 : update: added Aimer/BEST SELECTION blanc/03. あなたに出会わなければ〜夏雪冬花〜 .mp3
+Apr 22 20:58 : update: added Aimer/BEST SELECTION blanc/11. 雪の降る街.mp3
+Apr 22 20:58 : update: added Btooom! OP Single - No pain, No game/01.アオゾラ.mp3
+Apr 22 20:58 : update: added Btooom! OP Single - No pain, No game/01 - No pain, No game.mp3
+Apr 22 20:58 : update: added Haikyu!! COMPLETE BEST/11. Mashi Mashi.mp3
+Apr 22 20:58 : update: added Haikyu!! COMPLETE BEST/08. FLY HIGH!!.mp3
+Apr 22 20:58 : update: added Haikyu!! COMPLETE BEST/02. Tenchi gaeshi.mp3
+Apr 22 20:58 : update: added Haikyu!! COMPLETE BEST/03. Ah Yeah!!.mp3
+Apr 22 20:58 : update: added Haikyu!! COMPLETE BEST/04. LEO.mp3
+Apr 22 20:58 : update: added Haikyu!! COMPLETE BEST/05. Hoshi wo tsukamaete.mp3
+Apr 22 20:58 : update: added Haikyu!! COMPLETE BEST/07. Climber.mp3
+Apr 22 20:58 : update: added Haikyu!! COMPLETE BEST/10. Hikari Are.mp3
+Apr 22 20:58 : update: added Haikyu!! COMPLETE BEST/09. Hatsunetsu.mp3
+Apr 22 20:58 : update: added Haikyu!! COMPLETE BEST/06. I'm a Believer.mp3
+Apr 22 20:58 : update: added Haikyu!! COMPLETE BEST/01. Imagination.mp3
+Apr 22 20:58 : update: added DEAN FUJIOKA - History Maker/01. History Maker.mp3
+Apr 22 20:58 : update: added Mahoutsukai no Yome [FLAC]/[171101] OP1 - Here - JUNNA/01. Here.flac
+Apr 22 20:58 : update: added Mahoutsukai no Yome [FLAC]/[171101] OP1 - Here - JUNNA/03. Sora no Sumika.flac
+Apr 22 20:58 : update: added Mahoutsukai no Yome [FLAC]/[171101] OP1 - Here - JUNNA/02. Steppin’ Out.flac
+Apr 22 20:58 : update: added Mahoutsukai no Yome [FLAC]/[180207] ED2 - Tsuki no Mou Hanbun - AIKI & AKINO from bless4/01. Tsuki no Mou Hanbun.flac
+Apr 22 20:58 : update: added Mahoutsukai no Yome [FLAC]/[180207] ED2 - Tsuki no Mou Hanbun - AIKI & AKINO from bless4/02. Fragile.flac
+Apr 22 20:58 : update: added Mahoutsukai no Yome [FLAC]/[171101] ED1 - 環-cycle- - Hana Itoki/02. EYE.flac
+Apr 22 20:58 : update: added Mahoutsukai no Yome [FLAC]/[171101] ED1 - 環-cycle- - Hana Itoki/01. 環-cycle-.flac
+Apr 22 20:58 : update: added Mahoutsukai no Yome [FLAC]/[180207] OP2 - You - May'n/01. You.flac
+Apr 22 20:58 : update: added Mahoutsukai no Yome [FLAC]/[180207] OP2 - You - May'n/02. Another.flac
+Apr 22 20:58 : update: added Mahoutsukai no Yome [FLAC]/[180207] OP2 - You - May'n/03. Monster.flac
+Apr 22 20:58 : update: added [ASL] Various Artists - Tokyo Ghoul Original Soundtrack [FLAC]/01 GLASSY SKY.flac
+Apr 22 20:58 : update: added Amazarashi/amazarashi – Kisetsu wa Tsugitsugi Shindeiku Single/03 自虐家のアリー.mp3
+Apr 22 20:58 : update: added Amazarashi/amazarashi – Kisetsu wa Tsugitsugi Shindeiku Single/01 季節は次々死んでいく.mp3
+Apr 22 20:58 : update: added Amazarashi/amazarashi - Sora ni Utaeba/01. 空に歌えば.mp3
+Apr 22 20:58 : update: added Amazarashi/amazarashi - Sora ni Utaeba/04. たられば -Acoustic Ver.-.mp3
+Apr 22 20:58 : update: added Amazarashi/amazarashi - Sora ni Utaeba/02. 月光、街を焼く.mp3
+Apr 22 20:58 : update: added Amazarashi/amazarashi - Sora ni Utaeba/03. たられば.mp3
+Apr 22 20:58 : update: added Barakamon OST/01 - Rashisa.mp3
+Apr 22 20:58 : update: added Barakamon OST/02 - Watakushigoto.mp3
+Apr 22 20:58 : update: added DAOKO – Shiteki Ryokou (3rd Album)/DAOKO - 10 - NICE TRIP.mp3
+Apr 22 20:58 : update: added DAOKO – Shiteki Ryokou (3rd Album)/DAOKO - 06 - サニーボーイ・レイニーガール.mp3
+Apr 22 20:58 : update: added DAOKO – Shiteki Ryokou (3rd Album)/DAOKO - 09 - 打上花火 (DAOKO SOLO ver.).mp3
+Apr 22 20:58 : update: added DAOKO – Shiteki Ryokou (3rd Album)/DAOKO - 07 - 涙は雨粒.mp3
+Apr 22 20:58 : update: added DAOKO – Shiteki Ryokou (3rd Album)/DAOKO - 08 - 蝶々になって.mp3
+Apr 22 20:58 : update: added DAOKO – Shiteki Ryokou (3rd Album)/DAOKO - 03 - オイデオイデ.mp3
+Apr 22 20:58 : update: added DAOKO – Shiteki Ryokou (3rd Album)/DAOKO - 05 - 種も仕掛けもある魔法.mp3
+Apr 22 20:58 : update: added DAOKO – Shiteki Ryokou (3rd Album)/DAOKO - 04 - 24h.mp3
+Apr 22 20:58 : ffmpeg/mov,mp4,m4a,3gp,3g2,mj2: stream 0, timescale not set
+Apr 22 20:58 : update: added Kankaku Piero - Rakugaki Page (Single) BLACK CLOVER OP6/01 落書きペイジ.m4a
+Apr 22 20:58 : update: added MADKID - Rise (Single) Tate no Yuusha no Nariagari OP/01.RISE.mp3
+Apr 22 20:58 : update: added MADKID - Rise (Single) Tate no Yuusha no Nariagari OP/02.Puzzle.mp3
+Apr 22 20:58 : update: added Yuuki Ozaki (from Galileo Galilei) - Trigger/03. Ashi No Tsuku Umi.mp3
+Apr 22 20:58 : update: added Yuuki Ozaki (from Galileo Galilei) - Trigger/02. Dobu To Kobune To Bokura No Shinwa (Single Ver.).mp3
+Apr 22 20:58 : update: added Yuuki Ozaki (from Galileo Galilei) - Trigger/01. Trigger.mp3
+Apr 22 20:58 : update: added Suzumiya Haruhi no Tsumeawase/02 Lost my music.mp3
+Apr 22 20:58 : update: added Suzumiya Haruhi no Tsumeawase/01 Sekai ga Yumemiru Yume no Naka (Харухи + Юки + Микуру).mp3
+Apr 22 20:58 : update: added Suzumiya Haruhi no Tsumeawase/01 God knows.mp3
+Apr 22 20:58 : update: added Magi - The Kingdom of Magic - OP2 - Light-HIKARI- ViViD/MP3/01. Light -HIKARI-.mp3
+Apr 22 20:58 : update: added Magi - The Kingdom of Magic - OP2 - Light-HIKARI- ViViD/MP3/02. OVER THE LIMIT.mp3
+Apr 22 20:58 : update: added Deadman Wonderland OP Single - One Reason/02 - One Reason.mp3
+Apr 22 20:58 : update: added Deadman Wonderland OP Single - One Reason/03 - From the Heart.mp3
+Apr 22 20:58 : update: added Maon Kurosaki - ROAR (Single) Toaru Majutsu no Index III OP2/01. ROAR.mp3
+Apr 22 20:58 : update: added TK from Ling tosite sigure - unravel (Single)/01. unravel.mp3
+Apr 22 20:58 : update: added TK from Ling tosite sigure - unravel (Single)/02. Fu re te Fu re ru.mp3
+Apr 22 20:58 : update: added 藤田麻衣子 - wish ～キボウ～/3 気持ちの整理できるまで.mp3
+Apr 22 20:58 : update: added 藤田麻衣子 - wish ～キボウ～/1 wish ～キボウ～.mp3
+Apr 22 20:58 : update: added 藤田麻衣子 - wish ～キボウ～/2 トライアングル(duet with 奥華子).mp3
+Apr 22 20:58 : update: added Kimi no Na wa. Original Soundtrack  RADWIMPS/スパークル - Sparkle.mp3
+Apr 22 20:58 : update: added Kimi no Na wa. Original Soundtrack  RADWIMPS/08. 前前前世 (Movie Ver.).mp3
+Apr 22 20:58 : update: added Kimi no Na wa. Original Soundtrack  RADWIMPS/27. なんでもないや (Movie Ver.).mp3
+Apr 22 20:58 : update: added KANA-BOON - ネリネ/02. アフターワード.mp3
+Apr 22 20:58 : update: added KANA-BOON - ネリネ/05. ペンギン.mp3
+Apr 22 20:58 : update: added KANA-BOON - ネリネ/04. 湯気.mp3
+Apr 22 20:58 : update: added KANA-BOON - ネリネ/03. 春を待って.mp3
+Apr 22 20:58 : update: added KANA-BOON - ネリネ/01. ネリネ.mp3
+Apr 22 20:58 : update: added Ghibli the Best [MP3]/04 - My Neighbor Totoro.mp3
+Apr 22 20:58 : update: added Ghibli the Best [MP3]/01 - Therru no Uta.mp3
+Apr 22 20:58 : update: added Ghibli the Best [MP3]/25 - Kaze Ni Naru.mp3
+Apr 22 20:58 : update: added Ghibli the Best [MP3]/03 - Always With Me (Spirited Away).mp3
+Apr 22 20:58 : update: added Ghibli the Best [MP3]/05 - Carrying You (Castle in the Sky).mp3
+Apr 22 20:58 : update: added Ghibli the Best [MP3]/16 - The Promise of the World (Howl's Moving Castle).mp3
+Apr 22 20:58 : update: added Ghibli the Best [MP3]/10 - The Rose (Only Yesterday).mp3
+Apr 22 20:58 : update: added Ghibli the Best [MP3]/06 - Princess Mononoke Medley.mp3
+Apr 22 20:58 : update: added Ghibli the Best [MP3]/09 - The Merry-go-round of Life (Howl's Moving Castle).mp3
+Apr 22 20:58 : update: added Ghibli the Best [MP3]/13 - Nausicaa of the Valley of the Wind.mp3
+Apr 22 20:58 : update: added Ghibli the Best [MP3]/08 - The Days Long Gone (Nausicaa of the Valley of the Wind).mp3
+Apr 22 20:58 : update: added Ghibli the Best [MP3]/12 - Talking of the Old Times (Porco Rosso).mp3
+Apr 22 20:58 : update: added Ghibli the Best [MP3]/15 - A Town with an Ocean View (Kiki's Delivery Service).mp3
+Apr 22 20:58 : update: added Ghibli the Best [MP3]/14 - Le Temps des Cerises (Porco Rosso).mp3
+Apr 22 20:58 : update: added Guilty Crown OST [MP3]/02 Zainin.mp3
+Apr 22 20:58 : update: added Guilty Crown OST [MP3]/01 My Dearest.mp3
+Apr 22 20:58 : update: added Guilty Crown OST [MP3]/02 Euterpe.mp3
+Apr 22 20:58 : update: added Guilty Crown OST [MP3]/01 Departures ~Anata ni Okuru Ai no Uta~.mp3
+Apr 22 20:58 : update: added ReZero Kara Hajimeru Isekai Seikatsu OP Single - Redo FLAC/01 - Redo.flac
+Apr 22 20:58 : update: added ReZero Kara Hajimeru Isekai Seikatsu OP Single - Redo FLAC/02 - Mobius.flac
+Apr 22 20:58 : update: added ReZero Kara Hajimeru Isekai Seikatsu OP Single - Redo FLAC/03 - Sekai wa Kizu wo Dakishimeru (Acoustic ver.).flac
+Apr 22 20:58 : update: added Fairy Tail OST/02 Boys Be Ambitious!!.flac
+Apr 22 20:58 : update: added Fairy Tail OST/04 Glitter (Starving Trancer Remix).flac
+Apr 22 20:58 : update: added Fairy Tail OST/08 Kimi ga Kureta Mono.flac
+Apr 22 20:58 : update: added Fairy Tail OST/01 - Snow fairy.mp3
+Apr 22 20:58 : update: added Fairy Tail OST/02 - Aitakute.mp3
+Apr 22 20:58 : update: added Fairy Tail OST/05 「Tenohira」.flac
+Apr 22 20:58 : update: added Fairy Tail OST/06 Yell ~Kagayaku Tame no Mono~.flac
+Apr 22 20:58 : update: added Fairy Tail OST/07 Breakthrough.flac
+Apr 22 20:58 : update: added Fairy Tail OST/09 Fairy Tail ~Yakusoku no Hi~.flac
+Apr 22 20:58 : update: added Fairy Tail OST/03 Hajimari no Sora.flac
+Apr 22 20:58 : update: added Fairy Tail OST/10 We're the stars.flac
+Apr 22 20:58 : update: added Fairy Tail OST/01 - Kimi ga Iru Kara.mp3
+Apr 22 20:58 : update: added Yanaginagi/02. Laterality.flac
+Apr 22 20:58 : update: added Yanaginagi/12. Mitsuba no Musubime.flac
+Apr 22 20:58 : update: added Yanaginagi/08. Tsuki Akari Funwari Ochitekuru Yoru.flac
+Apr 22 20:58 : update: added Yanaginagi/04. Jikan wa Mado no Mukougawa.flac
+Apr 22 20:58 : update: added Yanaginagi/09. Souzou no Kimi.flac
+Apr 22 20:58 : update: added Yanaginagi/03. Tetragon.flac
+Apr 22 20:58 : update: added Yanaginagi/05. Zoetrope.flac
+Apr 22 20:58 : update: added Yanaginagi/07. Aliens.flac
+Apr 22 20:58 : update: added Yanaginagi/01. Yukitoki.flac
+Apr 22 20:58 : update: added Yanaginagi/09. mnemonic.flac
+Apr 22 20:58 : update: added Yanaginagi/02. here and there.flac
+Apr 22 20:58 : update: added Yanaginagi/05. Laterality.flac
+Apr 22 20:58 : update: added Yanaginagi/14. link.flac
+Apr 22 20:58 : update: added Yanaginagi/13. Yoake no Hikari wo Atsume Nagara.flac
+Apr 22 20:58 : update: added Yanaginagi/04. Orarion.flac
+Apr 22 20:58 : update: added Yanaginagi/06. Kazakiri.flac
+Apr 22 20:58 : update: added Yanaginagi/15. Vidro Moyou.flac
+Apr 22 20:58 : update: added Yanaginagi/10. mnemonic.flac
+Apr 22 20:58 : update: added Yanaginagi/05. Kazakiri.flac
+Apr 22 20:58 : update: added Yanaginagi/12. Mimei no Kimi to Hakumei no Mahou.flac
+Apr 22 20:58 : update: added Yanaginagi/08. Mukei no Outline.flac
+Apr 22 20:58 : update: added Yanaginagi/03. Tokuhana.flac
+Apr 22 20:58 : update: added Yanaginagi/02. point at infinity.flac
+Apr 22 20:58 : update: added Yanaginagi/14. Terminal.flac
+Apr 22 20:58 : update: added Yanaginagi/12. CorLeonis.flac
+Apr 22 20:58 : update: added Yanaginagi/14. Harumodoki.flac
+Apr 22 20:58 : update: added Yanaginagi/10. Orarion.flac
+Apr 22 20:58 : update: added Yanaginagi/11. Satoudama no Tsuki.flac
+Apr 22 20:58 : update: added Yanaginagi/01. over and over.flac
+Apr 22 20:58 : update: added Yanaginagi/07. Meimoku no Kanata.flac
+Apr 22 20:58 : update: added Yanaginagi/07. Madoi Mirai.flac
+Apr 22 20:58 : update: added Yanaginagi/08. Aqua Terrarium.flac
+Apr 22 20:58 : update: added Yanaginagi/15. You can count on me.flac
+Apr 22 20:58 : update: added Yanaginagi/09. Esse.flac
+Apr 22 20:58 : update: added Yanaginagi/11. BiblioMonster.flac
+Apr 22 20:58 : update: added Yanaginagi/06. Ambivalentidea.flac
+Apr 22 20:58 : update: added Yanaginagi/13. Satoudama no Tsuki.flac
+Apr 22 20:58 : update: added Yanaginagi/11. Sweet Track.flac
+Apr 22 20:58 : update: added Yanaginagi/01. Futatsu no Tsuki.flac
+Apr 22 20:58 : update: added Yanaginagi/13. Yoru Tenmaku.flac
+Apr 22 20:58 : update: added Yanaginagi/10. Crossroad.flac
+Apr 22 20:58 : update: added Ao no Ekusoshisuto OP/02. 境地・マントラ.mp3
+Apr 22 20:58 : update: added Ao no Ekusoshisuto OP/01. CORE PRIDE.mp3
+Apr 22 20:58 : update: added Hyouka OST/02 - Komorebi-iro no Kioku.mp3
+Apr 22 20:58 : update: added Hyouka OST/03 - Aozora no Kodou.mp3
+Apr 22 20:58 : update: added Hyouka OST/01 - Yasashisa no Riyuu.mp3
+Apr 22 20:58 : update: added Kalafina/Lacrimosa.mp3
+Apr 22 20:58 : update: added Kalafina/Ku Gatsu.mp3
+Apr 22 20:58 : update: added HYDE - Zipang/1-02. Ordinary World.mp3
+Apr 22 20:58 : update: added HYDE - Zipang/1-01. Zipang (Japanese Version).mp3
+Apr 22 20:58 : update: added Flow/Colors.mp3
+Apr 22 20:58 : update: added Danshi Koukousei no Nichijou/Shiny-tale-Danshi-Koukousei-no-Nichijou-OP-Mix-Speaker-s-Inc.mp3
+Apr 22 20:58 : update: added Kazumi Nikaido/Inochi no Kioku.mp3
+Apr 22 20:58 : update: added Ao Haru Ride/Sekai wa Koi ni Ochiteiru.mp3
+Apr 22 20:58 : update: added Bleach OST/02 - Winter Hot Music.mp3
+Apr 22 20:58 : update: added Bleach OST/01 - Rolling star.mp3
+Apr 22 20:58 : update: added Bleach OST/01 - Ichirin no Hana.mp3
+Apr 22 20:58 : update: added Bleach OST/02 - Warped Reflection.mp3
+Apr 22 20:58 : update: added Bleach OST/01 - Hitohira no Hanabira.mp3
+Apr 22 20:58 : update: added Bleach OST/03 - I remember you ~YUI Acoustic Version~.mp3
+Apr 22 20:58 : update: added Bleach OST/02 - Nyaamii.mp3
+Apr 22 20:58 : update: added Bleach OST/03 - Yuukan na Funny Friends.mp3
+Apr 22 20:58 : update: added Mika Nakashima – Yuki no Hana 15 Shunen Kinen Best Ban BIBLE/Disc 1/10 Love No Cry.mp3
+Apr 22 20:58 : update: added Mika Nakashima – Yuki no Hana 15 Shunen Kinen Best Ban BIBLE/Disc 1/11 A or B.mp3
+Apr 22 20:58 : update: added Mika Nakashima – Yuki no Hana 15 Shunen Kinen Best Ban BIBLE/Disc 1/08 Kiss of Death (Produced by Hyde).mp3
+Apr 22 20:58 : update: added Mika Nakashima – Yuki no Hana 15 Shunen Kinen Best Ban BIBLE/Disc 1/03 Sairen.mp3
+Apr 22 20:58 : update: added Mika Nakashima – Yuki no Hana 15 Shunen Kinen Best Ban BIBLE/Disc 1/07 Koi Wo Suru.mp3
+Apr 22 20:58 : update: added Mika Nakashima – Yuki no Hana 15 Shunen Kinen Best Ban BIBLE/Disc 1/14 Hanataba.mp3
+Apr 22 20:58 : update: added Mika Nakashima – Yuki no Hana 15 Shunen Kinen Best Ban BIBLE/Disc 1/09 Love Addict.mp3
+Apr 22 20:58 : update: added Mika Nakashima – Yuki no Hana 15 Shunen Kinen Best Ban BIBLE/Disc 1/01 Yuki No Hana.mp3
+Apr 22 20:58 : update: added Mika Nakashima – Yuki no Hana 15 Shunen Kinen Best Ban BIBLE/Disc 1/04 Hatsukoi.mp3
+Apr 22 20:58 : update: added Mika Nakashima – Yuki no Hana 15 Shunen Kinen Best Ban BIBLE/Disc 1/13 Anatagairukara.mp3
+Apr 22 20:58 : update: added Mika Nakashima – Yuki no Hana 15 Shunen Kinen Best Ban BIBLE/Disc 1/05 Aishiteru.mp3
+Apr 22 20:58 : update: added Mika Nakashima – Yuki no Hana 15 Shunen Kinen Best Ban BIBLE/Disc 1/12 Always.mp3
+Apr 22 20:58 : update: added Mika Nakashima – Yuki no Hana 15 Shunen Kinen Best Ban BIBLE/Disc 1/15 Yoruga Akeru Maeni.mp3
+Apr 22 20:58 : update: added Mika Nakashima – Yuki no Hana 15 Shunen Kinen Best Ban BIBLE/Disc 1/06 Ainouta.mp3
+Apr 22 20:58 : update: added Mika Nakashima – Yuki no Hana 15 Shunen Kinen Best Ban BIBLE/Disc 1/02 Will.mp3
+Apr 22 20:58 : update: added Mika Nakashima – Yuki no Hana 15 Shunen Kinen Best Ban BIBLE/Disc 3/06 Fighter.mp3
+Apr 22 20:58 : update: added Mika Nakashima – Yuki no Hana 15 Shunen Kinen Best Ban BIBLE/Disc 3/04 Life.mp3
+Apr 22 20:58 : update: added Mika Nakashima – Yuki no Hana 15 Shunen Kinen Best Ban BIBLE/Disc 3/12 The Dividing Line.mp3
+Apr 22 20:58 : update: added Mika Nakashima – Yuki no Hana 15 Shunen Kinen Best Ban BIBLE/Disc 3/07 Over Load.mp3
+Apr 22 20:58 : update: added Mika Nakashima – Yuki no Hana 15 Shunen Kinen Best Ban BIBLE/Disc 3/03 Ichiban Kireina Watashiwo.mp3
+Apr 22 20:58 : update: added Mika Nakashima – Yuki no Hana 15 Shunen Kinen Best Ban BIBLE/Disc 3/02 Stars.mp3
+Apr 22 20:58 : update: added Mika Nakashima – Yuki no Hana 15 Shunen Kinen Best Ban BIBLE/Disc 3/10 Happy Life.mp3
+Apr 22 20:58 : update: added Mika Nakashima – Yuki no Hana 15 Shunen Kinen Best Ban BIBLE/Disc 3/14 Last Waltz.mp3
+Apr 22 20:58 : update: added Mika Nakashima – Yuki no Hana 15 Shunen Kinen Best Ban BIBLE/Disc 3/05 Glamorous Sky.mp3
+Apr 22 20:58 : update: added Mika Nakashima – Yuki no Hana 15 Shunen Kinen Best Ban BIBLE/Disc 3/08 Tough.mp3
+Apr 22 20:58 : update: added Mika Nakashima – Yuki no Hana 15 Shunen Kinen Best Ban BIBLE/Disc 3/13 Find the Way.mp3
+Apr 22 20:58 : update: added Mika Nakashima – Yuki no Hana 15 Shunen Kinen Best Ban BIBLE/Disc 3/11 Gift.mp3
+Apr 22 20:58 : update: added Mika Nakashima – Yuki no Hana 15 Shunen Kinen Best Ban BIBLE/Disc 2/03 Forget Me Not.mp3
+Apr 22 20:58 : update: added Mika Nakashima – Yuki no Hana 15 Shunen Kinen Best Ban BIBLE/Disc 2/07 Boku Ga Shinou To Omottanowa.mp3
+Apr 22 20:58 : update: added Mika Nakashima – Yuki no Hana 15 Shunen Kinen Best Ban BIBLE/Disc 2/12 Koe.mp3
+Apr 22 20:58 : update: added Mika Nakashima – Yuki no Hana 15 Shunen Kinen Best Ban BIBLE/Disc 2/14 Hitori (Single Version).mp3
+Apr 22 20:58 : update: added Mika Nakashima – Yuki no Hana 15 Shunen Kinen Best Ban BIBLE/Disc 2/11 Ashita Sekaiga Owarunara.mp3
+Apr 22 20:58 : update: added Mika Nakashima – Yuki no Hana 15 Shunen Kinen Best Ban BIBLE/Disc 2/09 Alone.mp3
+Apr 22 20:58 : update: added Mika Nakashima – Yuki no Hana 15 Shunen Kinen Best Ban BIBLE/Disc 2/10 Pierce.mp3
+Apr 22 20:58 : update: added Mika Nakashima – Yuki no Hana 15 Shunen Kinen Best Ban BIBLE/Disc 2/08 Hiro.mp3
+Apr 22 20:58 : update: added Mika Nakashima – Yuki no Hana 15 Shunen Kinen Best Ban BIBLE/Disc 2/02 Orion.mp3
+Apr 22 20:58 : update: added Mika Nakashima – Yuki no Hana 15 Shunen Kinen Best Ban BIBLE/Disc 2/05 Sakura Iro Mau Koro.mp3
+Apr 22 20:58 : update: added Mika Nakashima – Yuki no Hana 15 Shunen Kinen Best Ban BIBLE/Disc 2/06 Dear.mp3
+Apr 22 20:58 : update: added Mika Nakashima – Yuki no Hana 15 Shunen Kinen Best Ban BIBLE/Disc 2/04 Melody.mp3
+Apr 22 20:58 : update: added Mika Nakashima – Yuki no Hana 15 Shunen Kinen Best Ban BIBLE/Disc 2/13 Change the Scene.mp3
+Apr 22 20:58 : update: added Ultra Tower/1 希望の唄.mp3
+Apr 22 20:58 : update: added Ultra Tower/2 ハロー.mp3
+Apr 22 20:58 : update: added Fullmetal Alchemist Brotherhood/02 - cut.mp3
+Apr 22 20:58 : update: added Fullmetal Alchemist Brotherhood/02 Sea.flac
+Apr 22 20:58 : update: added Fullmetal Alchemist Brotherhood/01 again.flac
+Apr 22 20:58 : update: added Fullmetal Alchemist Brotherhood/02 Brandnew Season -Yume no Joushaken-.flac
+Apr 22 20:58 : update: added Fullmetal Alchemist Brotherhood/01 - Rain.mp3
+Apr 22 20:58 : update: added Fullmetal Alchemist Brotherhood/03 SUMMER SONG -YUI Acoustic Version-.flac
+Apr 22 20:58 : update: added Fullmetal Alchemist Brotherhood/01 Period.flac
+Apr 22 20:58 : update: added Fullmetal Alchemist Brotherhood/03 - chapter 1 (Live from [Ichiban Suki na Basho 2010]).mp3
+Apr 22 20:58 : client: [1] closed
+Apr 22 21:00 : client: [2] opened from 127.0.0.1:51332
+Apr 22 21:00 : client: [2] closed
+Apr 22 21:04 : client: [3] opened from 127.0.0.1:51392
+Apr 22 21:05 : client: [3] closed
+Apr 22 21:08 : client: [4] opened from 127.0.0.1:51406
+Apr 22 21:08 : client: [4] closed
+Apr 22 21:08 : exception: RTIOThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted
+Apr 22 21:08 : config: option 'device' on line 13 was not recognized
+Apr 22 21:08 : client: [0] opened from 127.0.0.1:51410
+Apr 22 21:08 : client: [0] closed
+Apr 22 21:15 : config: option 'device' on line 12 was not recognized
+Apr 22 21:16 : config: option 'device' on line 12 was not recognized
+Apr 22 21:16 : client: [0] opened from 127.0.0.1:51424
+Apr 22 21:16 : client: [0] closed
+Apr 22 21:16 : config: option 'device' on line 12 was not recognized
+Apr 22 21:16 : client: [0] opened from 127.0.0.1:40858
+Apr 22 21:16 : client: [0] closed
+Apr 22 21:17 : client: [1] opened from 127.0.0.1:40864
+Apr 22 21:17 : client: [1] closed
+Apr 22 21:17 : client: [2] opened from 127.0.0.1:40870
+Apr 22 21:17 : client: [2] closed
+Apr 22 21:21 : client: [3] opened from 127.0.0.1:40882
+Apr 22 21:22 : client: [3] closed
+Apr 22 21:26 : config: option 'device' on line 13 was not recognized
+Apr 22 21:27 : client: [0] opened from 127.0.0.1:40890
+Apr 22 21:27 : client: [0] closed
+Apr 22 21:29 : client: [1] opened from 127.0.0.1:40894
+Apr 22 21:29 : client: [1] closed
+Apr 22 21:29 : config: option 'device' on line 13 was not recognized
+Apr 22 21:29 : client: [0] opened from 127.0.0.1:40898
+Apr 22 21:30 : exception: Failed to enable output "pulse audio" (pulse)
+Apr 22 21:30 : exception: nested: pa_context_connect() has failed: Connection refused
+Apr 22 21:30 : client: [0] closed
+Apr 22 21:32 : client: [0] opened from 127.0.0.1:40906
+Apr 22 21:36 : player: played "Kimi no Na wa. Original Soundtrack  RADWIMPS/スパークル - Sparkle.mp3"
+Apr 22 21:42 : player: played "Fullmetal Alchemist Brotherhood/01 Period.flac"
+Apr 22 21:45 : exception: Bad playlist name
+Apr 22 21:46 : player: played "Aimer/[2014.09.03] Dareka, Umi wo. (誰か、海を。) [Mini Album]/03. for ロンリー with 阿部真央.mp3"
+Apr 22 21:48 : client: [0] closed
+Apr 22 21:48 : client: [1] opened from 127.0.0.1:40922
+Apr 22 21:53 : player: played "Mika Nakashima – Yuki no Hana 15 Shunen Kinen Best Ban BIBLE/Disc 3/11 Gift.mp3"
+Apr 22 21:56 : player: played "Bleach OST/01 - Ichirin no Hana.mp3"
+Apr 22 22:01 : player: played "Barakamon OST/01 - Rashisa.mp3"
+Apr 22 22:05 : player: played "Haikyu!! COMPLETE BEST/11. Mashi Mashi.mp3"
+Apr 22 22:06 : client: [1] closed
+Apr 23 02:39 : player: played "Ao no Ekusoshisuto OP/01. CORE PRIDE.mp3"
