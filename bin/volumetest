@@ -1,0 +1,27 @@
+#/bin/sh
+getdefaultsinkname() {
+    pacmd stat | awk -F": " '/^Default sink name: /{print $2}'
+}
+
+getdefaultsinkvol() {
+    pacmd list-sinks |
+        awk '/^\s+name: /{indefault = $2 == "<'$(getdefaultsinkname)'>"}
+            /^\s+volume: / && indefault {print $5; exit}'
+
+}
+
+setdefaulsinkvol() {
+    pactl $(getdefaultsinkname) $1
+}
+
+
+volume=$(expr $(getdefaultsinkvol) | cut -f1 -d "%")
+#volume=$((a - 120))
+
+test=$(/home/raech/bin/getprogressstring 12 "" "" ${volume})
+echo ${test}
+msgId="991049"
+
+
+dunstify -a "changeVolume" -u low -i /home/raech/bin/icons/volume.png -r "$msgId" \  "${test}"
+
