@@ -1,20 +1,58 @@
 #!/bin/bash
 
-STEP=1
+STEP=5
 DEFAULTVOLUME=70
+MUTED="$(pacmd list-sinks | awk '/muted/ { print $2 }')"
 
 if [[ "$1" = "up" ]]; then
 	pactl set-sink-mute @DEFAULT_SINK@ 0 && pactl set-sink-volume @DEFAULT_SINK@ +$STEP%
-
+	ICON=/home/raech/bin/icons/volume.png
 elif [[ "$1" = "down" ]]; then
 	pactl set-sink-mute @DEFAULT_SINK@ 0 && pactl set-sink-volume @DEFAULT_SINK@ -$STEP%
+	ICON=/home/raech/bin/icons/down.png
 
 elif [[ "$1" = "toggle" ]]; then
 	pactl set-sink-mute @DEFAULT_SINK@ toggle
+	if [[ "$MUTED" == "no" ]]; then
+		ICON=/home/raech/bin/icons/mute.png
+	else
+		ICON=/home/raech/bin/icons/volume.png
+	fi
 
 elif [[ "$1" = "reset" ]]; then
 	pactl set-sink-mute @DEFAULT_SINK@ 0 && pactl set-sink-volume @DEFAULT_SINK@ $DEFAULTVOLUME%
 fi
 
 
-volumetest
+#VOLUMEINFO=$(`amixer -c 1 -M -D pulse get Master | egrep -m 1 -o '[0-9][0-9]%'`)
+#notify-send -t 500 -u low "`echo "$VOLUMEINFO"`"
+#notify-send -t 500 " " -h string:synchronous:Volume -h int:value:$VOLUMEINFO 
+#notify-send -u low -t 350 "Volume $(printf %s $(amixer get Master | egrep -m 1 -o '[0-9][0-9]%'))"
+#notify-send -u low -t 350 "Volume $(amixer sget Master | grep 'Right:' | awk -F'[][]' '{ print $2 }')"
+
+#volumetest
+
+echo $MUTED
+
+getdefaultsinkname() {
+    pacmd stat | awk -F": " '/^Default sink name: /{print $2}'
+}
+
+getdefaultsinkvol() {
+    pacmd list-sinks |
+        awk '/^\s+name: /{indefault = $2 == "<'$(getdefaultsinkname)'>"}
+            /^\s+volume: / && indefault {print $5; exit}'
+
+}
+
+setdefaulsinkvol() {
+    pactl $(getdefaultsinkname) $1
+}
+
+
+volume=$(expr $(getdefaultsinkvol) | cut -f1 -d "%")
+
+test=$(/home/raech/bin/getprogressstring 8 "" "" ${volume})
+msgId="991049"
+
+dunstify -a "changeVolume" -u low -i $ICON -r "$msgId" \   "${test}"
