@@ -1,0 +1,77 @@
+use_xft yes
+xftfont ProFontWindows Nerd Font Mono:size=13
+xftalpha 1
+
+update_interval 1.0
+total_run_times 0
+
+own_window yes
+own_window_transparent yes
+own_window_type desktop
+
+#own_window_class conky
+#own_window_title conky
+
+own_window_hints undecorated,below,skip_taskbar,skip_pager
+
+double_buffer yes
+minimum_size 180 0
+maximum_width 300
+draw_shades no
+draw_outline no
+draw_borders no
+draw_graph_borders no
+
+default_color faad45
+default_shade_color 0c141b
+default_outline_color fffffff
+
+alignment top_left
+gap_x 30
+gap_y -15
+no_buffers yes
+uppercase no
+
+cpu_avg_samples 2
+override_utf8_locale yes
+color2 faad45
+color1 faad45
+
+border_width 1
+#default_bar_size 146
+
+TEXT
+${voffset 26}SYSTEM ${hr 2}
+
+CPU1: ${cpu cpu1}%$alignr ${offset 7}${color1}${cpubar cpu1 6, 97 /}$color ${offset -108}${color2}${execbar echo 0}$color
+CPU2: ${cpu cpu2}%$alignr ${offset 7}${color1}${cpubar cpu2 6, 97 /}$color ${offset -108}${color2}${execbar echo 0}$color
+CPU3: ${cpu cpu3}%$alignr ${offset 7}${color1}${cpubar cpu3 6, 97 /}$color ${offset -108}${color2}${execbar echo 0}$color
+CPU4: ${cpu cpu4}%$alignr ${offset 7}${color1}${cpubar cpu4 6, 97 /}$color ${offset -108}${color2}${execbar echo 0}$color
+CPU5: ${cpu cpu5}%$alignr ${offset 7}${color1}${cpubar cpu5 6, 97 /}$color ${offset -108}${color2}${execbar echo 0}$color
+CPU6: ${cpu cpu6}%$alignr ${offset 7}${color1}${cpubar cpu6 6, 97 /}$color ${offset -108}${color2}${execbar echo 0}$color
+CPU Clock $alignr${exec lscpu | grep "CPU MHz:" | cut -f2 -d ":"} Mhz
+CPU Temperature $alignr${execi 15 sensors | grep "Core 0:" | cut -f2 -d "+" | cut -f1 -d "C"}C
+${voffset 26}MEMORY ${hr 2}
+
+RAM $alignc $mem / $memmax $alignr $memperc%
+${color1}${membar 6, 260}$color
+#${voffset -11}${color2}${execbar echo 0}$color
+${voffset 26}GPU ${hr 2}
+
+Fan Speed ${alignr}${execi 5 nvidia-settings -q [fan:0]/GPUCurrentFanSpeed -t} %
+Temperature $alignr ${nvidia temp}°C
+GPU Clock $alignr ${nvidia gpufreq} Mhz
+Memory Clock $alignr ${nvidia memfreq} Mhz
+Memory Used ${alignr}${execi 5 nvidia-settings -q [gpu:0]/UsedDedicatedGPUMemory -t}/${exec nvidia-settings -q [gpu:0]/TotalDedicatedGPUMemory -t} MiB
+#
+# ${color 2E5870}PROCESSES$color
+# ${top_mem name 1}${alignr}${top mem 1}%
+# ${top_mem name 2}${alignr}${top mem 2}%
+# ${top_mem name 3}${alignr}${top mem 3}%
+
+
+${voffset 800}
+#DATE ${hr 2}
+${font Source Han Sans JP:pixelsize=30}${alignc}${execi 15 LC_ALL=ja_JP.UTF-8 date "+%I:%M %p"}${font}
+${font Source Han Sans JP:pixelsize=24}${alignc}${execi 15 LC_ALL=ja_JP.UTF-8 date "+%A"}${font}
+#${alignc}${exec LC_ALL=ja_JP.UTF-8 date "+ %Y, %B %d"}
