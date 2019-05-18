@@ -1,0 +1,11 @@
+# /dev/sdb3
+UUID=5cbeddbb-bc26-4165-8bb1-ad0824f8de64	/         	ext4      	rw,relatime,data=ordered	0 0
+
+# /dev/sdb1
+UUID=C3A0-6BA1      	/boot/efi 	vfat      	rw,relatime,fmask=0022,dmask=0022,codepage=437,iocharset=iso8859-1,shortname=mixed,utf8,errors=remount-ro	0 0
+
+# /dev/sdb2
+UUID=30fa8eec-e3e1-407c-ae32-ac2885c567ac	none      	swap      	defaults,pri=-2	0 0
+
+# /dev/sdc1
+UUID=920881090880EE13 /mnt/windows ntfs-3g defaults,exec 0 0

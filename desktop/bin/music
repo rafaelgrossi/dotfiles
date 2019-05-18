@@ -1,0 +1,3 @@
+#!/bin/bash
+
+st -t music -c music ncmpcpp
