@@ -5,10 +5,11 @@
  *
  * font: see http://freedesktop.org/software/fontconfig/fontconfig-user.html
  */
-static char *font = "xos4 Terminus:size=14";
+//static char *font = "xos4 Terminus:size=14";
+static char *font = "ProFontIIx Nerd Font Mono:size=10";
 static int borderpx = 2;
 
-#define THEME 7
+#define THEME 9
 // lovelace 1
 // skyfall  2
 // White    3
@@ -30,6 +31,12 @@ static int borderpx = 2;
 #include "themes/lightbrown.h"
 #elif THEME == 7
 #include "themes/violeteg.h"
+#elif THEME == 8
+#include "themes/monochrome.h"
+#elif THEME == 9
+#include "themes/monochromelight.h"
+#elif THEME == 10
+#include "themes/pywal_nier.h"
 #endif
 
 unsigned int defaultfg = 259;
