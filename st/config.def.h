@@ -5,15 +5,12 @@
  *
  * font: see http://freedesktop.org/software/fontconfig/fontconfig-user.html
  */
-static char *font = "xos4 Terminus:size=14";
-static int borderpx = 2;
+//static char *font = "xos4 Terminus:size=14";
 
-#define THEME 1
-// lovelace 1
-// skyfall  2
-// White    3
-// Pastel   4
-// Reorr    5
+static char *font = "ProFontIIx Nerd Font Mono:size=10:antialias=true:autohint=true;";
+static int borderpx = 6;
+
+#define THEME 9
 
 #if THEME == 1
 #include "themes/lovelace.h"
@@ -25,6 +22,16 @@ static int borderpx = 2;
 #include "themes/light-like-pastel.h"
 #elif THEME == 5
 #include "themes/reorr.h"
+#elif THEME == 6
+#include "themes/lightbrown.h"
+#elif THEME == 7
+#include "themes/violeteg.h"
+#elif THEME == 8
+#include "themes/monochrome.h"
+#elif THEME == 9
+#include "themes/monochromelight.h"
+#elif THEME == 10
+#include "themes/pywal_nier.h"
 #endif
 
 unsigned int defaultfg = 259;
@@ -136,6 +143,40 @@ static unsigned int mousebg = 0;
  */
 static unsigned int defaultattr = 11;
 
+ResourcePref resources[] = {
+		{ "font",         STRING,  &font },
+		{ "color0",       STRING,  &colorname[0] },
+		{ "color1",       STRING,  &colorname[1] },
+		{ "color2",       STRING,  &colorname[2] },
+		{ "color3",       STRING,  &colorname[3] },
+		{ "color4",       STRING,  &colorname[4] },
+		{ "color5",       STRING,  &colorname[5] },
+		{ "color6",       STRING,  &colorname[6] },
+		{ "color7",       STRING,  &colorname[7] },
+		{ "color8",       STRING,  &colorname[8] },
+		{ "color9",       STRING,  &colorname[9] },
+		{ "color10",      STRING,  &colorname[10] },
+		{ "color11",      STRING,  &colorname[11] },
+		{ "color12",      STRING,  &colorname[12] },
+		{ "color13",      STRING,  &colorname[13] },
+		{ "color14",      STRING,  &colorname[14] },
+		{ "color15",      STRING,  &colorname[15] },
+		{ "background",   STRING,  &colorname[256] },
+		{ "foreground",   STRING,  &colorname[257] },
+		{ "cursorColor",  STRING,  &colorname[258] },
+		{ "termname",     STRING,  &termname },
+		{ "shell",        STRING,  &shell },
+		{ "xfps",         INTEGER, &xfps },
+		{ "actionfps",    INTEGER, &actionfps },
+		{ "blinktimeout", INTEGER, &blinktimeout },
+		{ "bellvolume",   INTEGER, &bellvolume },
+		{ "tabspaces",    INTEGER, &tabspaces },
+		{ "cwscale",      FLOAT,   &cwscale },
+		{ "chscale",      FLOAT,   &chscale },
+};
+
+
+
 /*
  * Internal mouse shortcuts.
  * Beware that overloading Button1 will disable the selection.
@@ -209,6 +250,12 @@ static uint ignoremod = Mod2Mask|XK_SWITCH_MOD;
  * modifier, set to 0 to not use it.
  */
 static uint forceselmod = ShiftMask;
+
+MouseKey mkeys[] = {
+	/* button               mask            function        argument */
+	{ Button4,              ShiftMask,      kscrollup,      {.i =  1} },
+	{ Button5,              ShiftMask,      kscrolldown,    {.i =  1} },
+};
 
 /*
  * This is the huge key array which defines all compatibility to the Linux
