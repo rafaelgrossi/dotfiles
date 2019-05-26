@@ -1,0 +1,260 @@
+\documentclass[
+% -- opções da classe memoir --
+12pt,				% tamanho da fonte
+openright,			% capítulos começam em pág ímpar (insere página vazia caso preciso)
+oneside,			% para impressão em recto e verso. Oposto a oneside
+a4paper,			% tamanho do papel. 
+% -- opções da classe abntex2 --
+%chapter=TITLE,		% títulos de capítulos convertidos em letras maiúsculas
+%section=TITLE,		% títulos de seções convertidos em letras maiúsculas
+%subsection=TITLE,	% títulos de subseções convertidos em letras maiúsculas
+%subsubsection=TITLE,% títulos de subsubseções convertidos em letras maiúsculas
+% -- opções do pacote babel --
+english,			% idioma adicional para hifenização
+french,				% idioma adicional para hifenização
+spanish,			% idioma adicional para hifenização
+brazil,				% o último idioma é o principal do documento
+]{abntex2}
+
+
+\usepackage{lmodern}			% Usa a fonte Latin Modern
+\usepackage[T1]{fontenc}		% Selecao de codigos de fonte.
+\usepackage[utf8]{inputenc}		% Codificacao do documento (conversão automática dos acentos)
+\usepackage{indentfirst}		% Indenta o primeiro parágrafo de cada seção.
+\usepackage{color}				% Controle das cores
+\usepackage{graphicx}			% Inclusão de gráficos
+\usepackage{microtype} 			% para melhorias de justificação
+\usepackage{multicol}
+\usepackage{multirow}
+\usepackage{lipsum}
+\usepackage[brazilian,hyperpageref]{backref}
+\usepackage[alf]{abntex2cite}
+\usepackage[export]{adjustbox}
+
+\renewcommand{\backrefpagesname}{Citado na(s) página(s):~}
+\renewcommand{\backref}{}
+\renewcommand*{\backrefalt}[4]{
+	\ifcase #1 %
+		%
+		\or
+		Citado na página #2.%
+	\else
+		Citado #1 vezes nas páginas #2.%
+\fi}%
+
+\titulo{Carga e Descarga de um Capacitor}
+\autor{Rafael Georgetti Grossi}
+\local{Belo Horizonte}
+\data{2019}
+\instituicao{%
+	Pontifícia Universidade Católica -- PUCMinas
+	\par
+	Faculdade de Engenharia Mecânica
+	\par
+Graduação}
+\tipotrabalho{Relatório técnico}
+\definecolor{blue}{RGB}{41,5,195}
+\makeatletter
+\hypersetup{
+	%pagebackref=true,
+	pdftitle={relatorio}, 
+	pdfauthor={Rafael Grossi},
+	pdfsubject={\imprimirpreambulo},
+	pdfcreator={LaTeX with abnTeX2},
+	pdfkeywords={abnt}{latex}{abntex}{abntex2}{relatório técnico}, 
+	colorlinks=true,       		% false: boxed links; true: colored links
+	linkcolor=blue,          	% color of internal links
+	citecolor=blue,        		% color of links to bibliography
+	filecolor=magenta,      	% color of file links
+	urlcolor=blue,
+	bookmarksdepth=4
+}
+\makeatother
+\setlength{\parindent}{1.3cm}
+\setlength{\parskip}{0.2cm}  % tente também \onelineskip
+\makeindex
+
+\begin{document}
+\selectlanguage{brazil}
+\frenchspacing 
+\imprimircapa
+
+\pdfbookmark[0]{\listfigurename}{lof}
+\listoffigures*
+\clearpage
+
+\pdfbookmark[0]{\listtablename}{lot}
+\listoftables*
+\clearpage
+
+\pdfbookmark[0]{\contentsname}{toc}
+\tableofcontents*
+\clearpage
+
+\textual
+
+% ----------------------------------------------------------
+% Introdução 
+% ----------------------------------------------------------
+\chapter{Introdução}
+
+Capacitores são dispositivos que tem como função armazenar cargas elétricas e consequente energia eletrostática, ou elétrica através de um campo elétrico. Ele é constituído de dois eletrodos metálicos. Entre esses eletrodos existe um material dielétrico (isolante), cuja função é permitir que as placas sejam colocadas muito próximas.
+
+\begin{figure}[ht]
+	\label{figura: Circuito Capacitor}
+	\caption{Circuito Capacitor}
+		\includegraphics[width=\paperwidth, center]{Figuras/fig1.png}
+\end{figure}
+
+A figura 1 mostra um circuito de carga de um capacitor com capacitância C utilizado uma fonte de tensão constante $V_{0}$. O processo de carga inicia-se quando fechamos a chave S. No instante imediato ao fechamento (t=0) o circuito comporta-se como se o capacitor não existisse. Portanto a corrente i no instante t=0 é igual a $\frac{V_{0}}{R}$. A medida que o capacitor é carregado esta corrente diminui e em um instante t qualquer a relação entre as voltagens nos elementos do circuito é dada por:
+\begin{equation}
+	V_{0} = V_{Resistor}(t) + V_{Capacitor}(t)
+\end{equation}
+Escrevendo-se em função da corrente têm-se:
+\begin{equation}
+	V = Ri + \frac{q}{C}
+\end{equation}
+Porem $i = \frac{dq}{dta}$, logo:
+\begin{equation}
+	V = R\frac{dq}{dt} + \frac{q}{C}
+\end{equation}
+Resolvendo-se a equação diferencial encontra-se:
+\begin{equation}
+	q = CV(1 - e^{-\frac{t}{RC}})
+\end{equation}
+\begin{equation}
+	i(t) = -\frac{V}{R}e^{-\frac{t}{RC}}
+\end{equation}
+Portanto a corrente ira diminuir exponencialmente a medida que o capacitoré carregado e o inverso durante a descarga. Nota-se que este processor é extremamente rápido, então tanto a carga quanto a descarga serão quase instântaneos.
+
+% ----------------------------------------------------------
+% Parte Experimental
+% ----------------------------------------------------------
+\chapter{Parte Experimental}
+\section{Objetivos}
+Analisar  o  comportamento da corrente  em  função  do  tempo,  durante  o processo de carga e descarga de um capacitor.
+\section{Material Utilizado}
+\begin{alineas}
+\item Fonte de Corrente Contínua;
+\item Resistor de 11 $k\Omega$;
+\item Capacitor Eletrolítico de 1000$\mu F$;
+\item Micrô Amperímetro;
+\item Cronômetro;
+\end{alineas}
+
+\section{Procedimentos}
+\begin{alineas}
+\item Montar o circuito ligando propriamente o amperímetro;
+\item Ajustar a Fonte para 1.5V;
+\item Ligar o circuito e preencher uma tabela corrente i por tempo T;
+\item Criar gráficos para a carga e descarga do capacitor corrente i por tempo T e um gráfico para ln(i) por T; 
+\end{alineas}
+
+% ----------------------------------------------------------
+% Desenvolvimento
+% ----------------------------------------------------------
+\chapter{Desenvolvimento}
+Primeiramente monta-se o circuito como elaborado na figura 1 e em seguida prepara-se o cronômetro para registrar o tempo. Divide-se em duas tarefas, uma para a carga e outra para a descarga.
+Para registrar os dados durante as duas tarefas utilizou-se uma câmera e através do filme foi possível criar as tabelas de corrente i por tempo t.
+
+\begin{table}[htb]
+	\IBGEtab{%
+		\caption[Corrente por Tempo ligado a Fonte]{Corrente por Tempo ligado a Fonte.}
+		\label{tabela-ibge}
+		}{%
+		\begin{tabular}{ccc}
+			\toprule
+			Corrente (i) & Tempo (s) \\
+			\midrule \midrule
+			50 & 3 \\
+			\midrule 
+			40 & 3,08 \\
+			\midrule 
+			30 & 3,41 \\
+			\midrule 
+			20 & 3,80 \\
+			\midrule 
+			10 & 4,51 \\
+			\midrule 
+			5 & 5,17 \\
+			\bottomrule
+		\end{tabular}%
+		}{%
+		\fonte{Autoria Própria.}%
+	}
+\end{table}
+\begin{table}[htb]
+	\IBGEtab{%
+		\caption[Corrente por Tempo com Capacitor]{Corrente por Tempo com Capacitor.}
+		\label{tabela-ibge2}
+		}{%
+		\begin{tabular}{ccc}
+			\toprule
+			Corrente (i) & Tempo (s) \\
+			\midrule \midrule
+			50 & 3 \\
+			\midrule 
+			40 & 3,21 \\
+			\midrule 
+			30 & 3,53 \\
+			\midrule 
+			20 & 3,93 \\
+			\midrule 
+			10 & 4,51 \\
+			\midrule 
+			5 & 5,23 \\
+			\bottomrule
+		\end{tabular}%
+		}{%
+		\fonte{Autoria Própria.}%
+	}
+\end{table}
+
+Em seguida, com auxilio do programa \textit{SciDavis} foram plotados os gráficos referentes às tabelas 1 e 2. A área abaixo da curva dos gráficos fornece a carga Q do capacitor.
+
+\begin{figure}[ht]
+\caption{Corrente por Tempo ligado à Fonte}
+\centering
+\includegraphics[scale=0.3]{Figuras/fonte.pdf} % leia abaixo
+\label{figura:corrente_tempo_fonte}
+\fonte{Autoria Própria}
+\end{figure}
+
+\begin{figure}[ht]
+\caption{Corrente por Tempo com Capacitor}
+\centering
+\includegraphics[scale=0.3]{Figuras/capacitor.pdf} % leia abaixo
+\label{figura:corrente_tempo_capacitor}
+\fonte{Autoria Própria}
+\end{figure}
+
+\pagebreak
+\begin{figure}[ht]
+\caption{$\ln{i}$ por tempo}
+\centering
+\includegraphics[scale=0.3]{Figuras/lnI.pdf} % leia abaixo
+\label{figura:lncorrente_tempo}
+\fonte{Autoria Própria}
+\end{figure}
+
+\pagebreak
+Como o gráfico $\ln{i}$ por t tem característica linear, é possivel fazer uma regressão linear e encontrar a Capacitância C através da equação: 
+\begin{equation}
+	\ln{i} = \ln{\frac{V}{R}} - \frac{T}{RC}
+\end{equation}
+Como o gráfico é linear, sabe-se que o coeficiente linear a é:
+\begin{equation}
+	a = \frac{1}{RC}
+\end{equation}
+Resolvendo-se as equações encontra-se a Capacitância de 945$\mu$F.  
+% ----------------------------------------------------------
+% Conclusao 
+% ----------------------------------------------------------
+\chapter{Conclusão}
+A corrente durante a carga e a descarga tem forma exponencial $i = I_{0}e^{-\frac{t}{RC}}$. Tomando o logaritimo natural em ambos os lados encontra-se a equação (3.1) e apartir desta foi possível calcular a Capacitância de 945$\mu$F que é muito proxima da descrita pelo fabricante (1000$\mu$F). A diferença é muito pequena e pode ser explicado pelo fato dos aparatos de medidas não serem muito precisos e o fator do erro humano durante as etapas do experimento.
+\nocite{pucminas_2019}
+\nocite{halliday}
+\bibliography{refbib}
+
+
+\end{document}

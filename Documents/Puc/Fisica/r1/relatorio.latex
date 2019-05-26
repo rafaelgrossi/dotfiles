@@ -1,0 +1,216 @@
+\documentclass[
+% -- opções da classe memoir --
+12pt,				% tamanho da fonte
+openright,			% capítulos começam em pág ímpar (insere página vazia caso preciso)
+oneside,			% para impressão em recto e verso. Oposto a oneside
+a4paper,			% tamanho do papel. 
+% -- opções da classe abntex2 --
+%chapter=TITLE,		% títulos de capítulos convertidos em letras maiúsculas
+%section=TITLE,		% títulos de seções convertidos em letras maiúsculas
+%subsection=TITLE,	% títulos de subseções convertidos em letras maiúsculas
+%subsubsection=TITLE,% títulos de subsubseções convertidos em letras maiúsculas
+% -- opções do pacote babel --
+english,			% idioma adicional para hifenização
+french,				% idioma adicional para hifenização
+spanish,			% idioma adicional para hifenização
+brazil,				% o último idioma é o principal do documento
+]{abntex2}
+
+
+\usepackage{lmodern}			% Usa a fonte Latin Modern
+\usepackage[T1]{fontenc}		% Selecao de codigos de fonte.
+\usepackage[utf8]{inputenc}		% Codificacao do documento (conversão automática dos acentos)
+\usepackage{indentfirst}		% Indenta o primeiro parágrafo de cada seção.
+\usepackage{color}				% Controle das cores
+\usepackage{graphicx}			% Inclusão de gráficos
+\usepackage{microtype} 			% para melhorias de justificação
+\usepackage{multicol}
+\usepackage{multirow}
+\usepackage{lipsum}
+\usepackage[brazilian,hyperpageref]{backref}
+\usepackage[alf]{abntex2cite}
+
+\renewcommand{\backrefpagesname}{Citado na(s) página(s):~}
+\renewcommand{\backref}{}
+\renewcommand*{\backrefalt}[4]{
+	\ifcase #1 %
+		%
+		\or
+		Citado na página #2.%
+	\else
+		Citado #1 vezes nas páginas #2.%
+\fi}%
+
+\titulo{Corrente Elétrica nos Condutores Metálicos}
+\autor{Rafael Georgetti Grossi}
+\local{Belo Horizonte}
+\data{2019}
+\instituicao{%
+	Pontifícia Universidade Católica -- PUCMinas
+	\par
+	Faculdade de Engenharia Mecânica
+	\par
+Graduação}
+\tipotrabalho{Relatório técnico}
+\definecolor{blue}{RGB}{41,5,195}
+\makeatletter
+\hypersetup{
+	%pagebackref=true,
+	pdftitle={\@title}, 
+	pdfauthor={\@author},
+	pdfsubject={\imprimirpreambulo},
+	pdfcreator={LaTeX with abnTeX2},
+	pdfkeywords={abnt}{latex}{abntex}{abntex2}{relatório técnico}, 
+	colorlinks=true,       		% false: boxed links; true: colored links
+	linkcolor=blue,          	% color of internal links
+	citecolor=blue,        		% color of links to bibliography
+	filecolor=magenta,      	% color of file links
+	urlcolor=blue,
+	bookmarksdepth=4
+}
+\makeatother
+\setlength{\parindent}{1.3cm}
+\setlength{\parskip}{0.2cm}  % tente também \onelineskip
+\makeindex
+
+\begin{document}
+\selectlanguage{brazil}
+\frenchspacing 
+\imprimircapa
+
+\pdfbookmark[0]{\listfigurename}{lof}
+\listoffigures*
+\clearpage
+
+\pdfbookmark[0]{\listtablename}{lot}
+\listoftables*
+\clearpage
+
+\pdfbookmark[0]{\contentsname}{toc}
+\tableofcontents*
+\clearpage
+
+\textual
+
+% ----------------------------------------------------------
+% Introdução 
+% ----------------------------------------------------------
+\chapter{Introdução}
+%\chapter*[Introdução]{Introdução}
+%\addcontentsline{toc}{chapter}{Introdução}
+%\section{Introdução}
+
+A resistência elétrica R é uma grandeza física que expressa a capacidade de um corpo de se opor à passagem de corrente elétrica quando existe uma diferença de potencial V aplicada. A resistência elétrica R entre dois pontos quais queres de um condutor é definido por :
+\begin{equation} \label{eq:re}
+	R = \frac{V}{i}
+\end{equation}
+A resistência é uma característica do fio como um todo, isto é, depende
+de seu comprimento, espessura e material. Por outro lado, a grandeza
+resistividade $\rho$ é uma propriedade específica dos materiais, ou seja,
+não se altera ao lidar com fios de diferentes tamanhos. Essa grandeza define a reposta do meio (objeto pelo qual a corrente atravessa) quando exposto a um campo elétrico E, matematicamente, têm-se:
+\begin{equation}
+	\rho = \frac{E}{j}
+\end{equation}
+No caso de um fio uniforme de comprimento L e seção reta de área A, tem-se:
+\begin{equation}
+	E = \frac{V}{L}
+\end{equation}
+\begin{equation}
+	j = \frac{i}{A}
+\end{equation}
+Combinando as equações 1.3 e 1.4, têm-se:
+\begin{equation}
+	R = \frac{\rho L}{A}
+\end{equation}
+
+\chapter{Parte Experimental}
+\section{Objetivos}
+Analisar, através do experimento, o módulo do campo elétrico gerado e calcular a resistividade e a resistência. Montar dois gráficos, V x L e R x L.
+\section{Material Utilizado}
+\begin{alineas}
+\item Um  voltímetro;
+\item Um  miliamperímetro;
+\item Uma  ponte  de  fio  de  resistência;
+\item Uma fonte de corrente contínua;
+\item Cinco cabos de ligação;
+\item Um micrômetro;
+\end{alineas}
+\section{Procedimentos}
+\begin{alineas}
+\item Montar o circuito ligando propriamente o amperímetro;
+\item Realizar várias medidas variando o comprimento do fio em 10cm e anotar a Tensão V e corrente i em um tabela;
+\item Calcular a resistência através da equação 1.1;
+\item Utilizar o micrômetro para medir o raio do fio e em seguida calcular a área da secção reta;
+\item Criar dois gráficos, R x L e V x L;
+\end{alineas}
+\chapter{Desenvolvimento}
+Inicialmente foi montado o circuito conforme relatado na apostila, em seguida iniciou-se o experimento. Primeiramente mediu-se a corrente elétrica i, então criou-se uma tabela Comprimento (L), em metros, e Tensão V, em volts, e utilizando-se de intervalos de 10 em 10 cm preencheu-se a tabela.
+
+\begin{table}[htb]
+	\IBGEtab{%
+		\caption[Comprimento por Tensão]{Comprimento por Tensão.}
+		\label{tabela-ibge}
+		}{%
+		\begin{tabular}{ccc}
+			\toprule
+			Tensão (V) & Comprimento (m) \\
+			\midrule \midrule
+			0,1 & 0,075 \\
+			\midrule 
+			0,2 & 0,130 \\
+			\midrule 
+			0,3 & 0,192 \\
+			\midrule 
+			0,4 & 0,251 \\
+			\midrule 
+			0,5 & 0,310 \\
+			\midrule 
+			0,6 & 0,383 \\
+			\midrule 
+			0,7 & 0,433 \\
+			\midrule 
+			0,8 & 0,488 \\
+			\midrule 
+			0,9 & 0,559 \\
+			\bottomrule
+		\end{tabular}%
+		}{%
+		\fonte{Autoria Própria.}%
+	}
+\end{table}
+
+Com os dados em mãos e utilizando a equação 1.1 calculou-se os valores da resistência R, em ohms, para todos os casos experimentados. Após isso, utilizando o SciDavis, plotou-se dois gráficos, um sendo Tensão por Comprimento (V x L) em Volts e Metro respectivamente, e o outro Resistência por Comprimento (R x L) em Ohms e Metro.
+
+\begin{figure}[ht]
+\caption{Tensão por Comprimento}
+\includegraphics[scale=0.3]{Figuras/tensao.pdf} % leia abaixo
+\label{figura:Tensão por Comprimento}
+\fonte{Autoria Própria}
+\end{figure}
+
+\begin{figure}[ht]
+\caption{Resistência por Comprimento}
+\includegraphics[scale=0.3]{Figuras/resistencia.pdf} % leia abaixo
+\label{figura:Resistência por Comprimento}
+\fonte{Autoria Própria}
+\end{figure}
+\pagebreak
+
+A partir do segundo gráfico foi possível calcular a resistividade do material, pois a regressão linear do gráfico fornece a seguinte equação:
+\begin{equation}
+a = \frac{\rho}{A}
+\end{equation}
+
+Utilizando-se do micrômetro mede-se o raio do fio e calcula-se a área de secção reta, então utilizando-se a equação 3.1 chega-se no resultado de 0,418 $\Omega m $
+
+\chapter{Conclusão}
+Com o experimento foi possível calcular a resistividade do material utilizado e embora possua uma margem de erro devido aos métodos de medidas adotados, ainda foi possível afirmar que o material é o Antimônio, com resistividade de 0,417 $\Omega m$ (o resultado encontrado foi de 0,418, muito semelhante).
+Através de uma tabela de resistividade foi possível perceber que o material utilizado possui alta resistividade e portanto é considerado um mal condutor.
+
+
+\nocite{pucminas_2019}
+\nocite{halliday}
+\bibliography{refbib}
+
+
+\end{document}

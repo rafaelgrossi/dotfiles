@@ -1,0 +1,132 @@
+\documentclass[
+% -- opções da classe memoir --
+12pt,				% tamanho da fonte
+openright,			% capítulos começam em pág ímpar (insere página vazia caso preciso)
+oneside,			% para impressão em recto e verso. Oposto a oneside
+a4paper,			% tamanho do papel. 
+% -- opções da classe abntex2 --
+%chapter=TITLE,		% títulos de capítulos convertidos em letras maiúsculas
+%section=TITLE,		% títulos de seções convertidos em letras maiúsculas
+%subsection=TITLE,	% títulos de subseções convertidos em letras maiúsculas
+%subsubsection=TITLE,% títulos de subsubseções convertidos em letras maiúsculas
+% -- opções do pacote babel --
+english,			% idioma adicional para hifenização
+french,				% idioma adicional para hifenização
+spanish,			% idioma adicional para hifenização
+brazil,				% o último idioma é o principal do documento
+]{abntex2}
+
+
+\usepackage{lmodern}			% Usa a fonte Latin Modern
+\usepackage[T1]{fontenc}		% Selecao de codigos de fonte.
+\usepackage[utf8]{inputenc}		% Codificacao do documento (conversão automática dos acentos)
+\usepackage{indentfirst}		% Indenta o primeiro parágrafo de cada seção.
+\usepackage{color}				% Controle das cores
+\usepackage{graphicx}			% Inclusão de gráficos
+\usepackage{microtype} 			% para melhorias de justificação
+\usepackage{multicol}
+\usepackage{multirow}
+\usepackage{lipsum}
+\usepackage[brazilian,hyperpageref]{backref}
+\usepackage[alf]{abntex2cite}
+
+\renewcommand{\backrefpagesname}{Citado na(s) página(s):~}
+\renewcommand{\backref}{}
+\renewcommand*{\backrefalt}[4]{
+	\ifcase #1 %
+		%
+		\or
+		Citado na página #2.%
+	\else
+		Citado #1 vezes nas páginas #2.%
+\fi}%
+
+\titulo{Carga e Descarga de um Capacitor}
+\autor{Rafael Georgetti Grossi}
+\local{Belo Horizonte}
+\data{2019}
+\instituicao{%
+	Pontifícia Universidade Católica -- PUCMinas
+	\par
+	Faculdade de Engenharia Mecânica
+	\par
+Graduação}
+\tipotrabalho{Relatório técnico}
+\definecolor{blue}{RGB}{41,5,195}
+\makeatletter
+\hypersetup{
+	%pagebackref=true,
+	pdftitle={relatorio}, 
+	pdfauthor={Rafael Grossi},
+	pdfsubject={\imprimirpreambulo},
+	pdfcreator={LaTeX with abnTeX2},
+	pdfkeywords={abnt}{latex}{abntex}{abntex2}{relatório técnico}, 
+	colorlinks=true,       		% false: boxed links; true: colored links
+	linkcolor=blue,          	% color of internal links
+	citecolor=blue,        		% color of links to bibliography
+	filecolor=magenta,      	% color of file links
+	urlcolor=blue,
+	bookmarksdepth=4
+}
+\makeatother
+\setlength{\parindent}{1.3cm}
+\setlength{\parskip}{0.2cm}  % tente também \onelineskip
+\makeindex
+
+\begin{document}
+\selectlanguage{brazil}
+\frenchspacing 
+\imprimircapa
+
+\pdfbookmark[0]{\listfigurename}{lof}
+\listoffigures*
+\clearpage
+
+\pdfbookmark[0]{\listtablename}{lot}
+\listoftables*
+\clearpage
+
+\pdfbookmark[0]{\contentsname}{toc}
+\tableofcontents*
+\clearpage
+
+\textual
+
+% ----------------------------------------------------------
+% Introdução 
+% ----------------------------------------------------------
+\chapter{Introdução}
+
+% ----------------------------------------------------------
+% Parte Experimental
+% ----------------------------------------------------------
+\chapter{Parte Experimental}
+\section{Objetivos}
+
+\section{Material Utilizado}
+\begin{alineas}
+\item Um  voltímetro;
+\end{alineas}
+
+\section{Procedimentos}
+\begin{alineas}
+\item Montar o circuito ligando propriamente o amperímetro;
+\end{alineas}
+
+% ----------------------------------------------------------
+% Desenvolvimento
+% ----------------------------------------------------------
+\chapter{Desenvolvimento}
+
+% ----------------------------------------------------------
+% Conclusao 
+% ----------------------------------------------------------
+\chapter{Conclusão}
+
+
+\nocite{pucminas_2019}
+\nocite{halliday}
+\bibliography{refbib}
+
+
+\end{document}
